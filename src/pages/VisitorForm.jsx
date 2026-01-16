@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { visitorAPI } from '../services/api';
+import { Link } from 'react-router-dom';
 
 const VisitorForm = () => {
   const [formData, setFormData] = useState({
@@ -101,7 +102,7 @@ const VisitorForm = () => {
         </form>
 
         <div className="form-footer">
-          <p>Staff Login: <a href="/login">Click here</a></p>
+          <p>Staff Login: <Link to="/login">Click here</Link></p>
         </div>
       </div>
     </div>
