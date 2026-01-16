@@ -31,7 +31,7 @@ export const authAPI = {
 };
 
 export const visitorAPI = {
-  create: (data) => api.post('/visitors', data),
+  create: (data) => api.post('/', data),
   getAll: (params) => api.get('/visitors', { params }),
   getToday: () => api.get('/visitors/today'),
   getById: (id) => api.get(`/visitors/${id}`),
