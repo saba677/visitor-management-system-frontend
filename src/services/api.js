@@ -26,7 +26,7 @@ api.interceptors.request.use(
 
 
 export const authAPI = {
-  login: (credentials) => api.post('/auth/login', credentials),
+  login: (credentials) => api.post('/api/auth/login', credentials),
   getProfile: () => api.get('/auth/profile')
 };
 
